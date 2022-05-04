@@ -370,6 +370,16 @@
                 </a></li>
             </ul>
         </div>
+    <div class="footer-submit">
+        <h3 class="submit-title">Подпишитесь на рассылку</h3>
+        <form class="footer-form">
+            <div class="footer-form-wrap">
+            <label for="user-email"></label>
+            <input type="text" name="user-email" placeholder="E-mail" class="footer-input">
+            <button type="submit" class="footer-button-submit">Подписаться</button>
+            </div>
+        </form>
+    </div>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -380,23 +390,30 @@
                 </svg>
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <form class="">
+            <form class="modal-form">
+                <div class="modal-field">
                 <label for="user-name" class="madal-lable">Имя</label>
                 <input 
                 type="text"
                 class="modal-input"
                 name="user-name"
                 >
+                </div>
+                <div class="modal-field">
                 <label for="user-phone" class="madal-lable">Телефон</label>
                 <input type="tel"
                 class="modal-input"
                 name="user-phone">
+                </div>
+                <div class="modal-field">
                 <label for="user-email" class="madal-lable">Почта</label>
                 <input type="text"
                 class="modal-input"
                 name="user-email">
+                </div>
                 <label for="user-text" class="madal-lable">Комментарий</label>
                 <textarea name="user-text" id="user-text" placeholder="Введите текст" class="modal-coment"></textarea>
+                <button type="submit" class="modal-send">Отправить</button>
             </form>
         </div>
     </div>
