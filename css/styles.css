@@ -800,6 +800,7 @@ img {
     border:none;
 }
 .footer-button-submit {
+    position: relative;
     min-width: 200px;
     height: 50px;
     font-weight: 700;
@@ -813,7 +814,10 @@ img {
     border-radius: 4px;
     margin-left: 12px;
 }
-
+.submit-btn-icon {
+    fill: var(--header-background-color);
+    position: absolute;
+}
 
 /* -------Модальне вікно------ */
 
@@ -944,20 +948,32 @@ img {
 .modal-coment:hover, .modal-coment:focus {
     border-color: var(--accent-color);
 }
-
 .text-wrap {
     margin-top: 4px;
+    margin-bottom: 20px;
 }
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+.contract {
+    color: var(--accent-color);
+}
+
+
 .modal-send {
     border: none;
 }
 
-
 .modal-send {
-
     display: flex;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
     min-width: 200px;
     height: 50px;
     padding: 10px 55px;

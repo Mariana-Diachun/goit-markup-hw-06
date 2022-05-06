@@ -377,6 +377,9 @@
             <label for="user-email"></label>
             <input type="text" name="user-email" placeholder="E-mail" class="footer-input">
             <button type="submit" class="footer-button-submit">Подписаться</button>
+            <svg class="submit-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send" class="icon-submit"></use>
+            </svg>
             </div>
         </form>
     </div>
@@ -434,6 +437,21 @@
                 <label for="user-text" class="madal-lable">Комментарий</label>
                 <div class="text-wrap">
                 <textarea name="user-text" id="user-text" placeholder="Введите текст" class="modal-coment"></textarea>
+                </div>
+                <div class="modal-checkbox">
+                    <input 
+                    type="checkbox"
+                    class="input-checkbox visualy-hidden"
+                    id="input-checkbox"
+                    name="policy"
+                    value="policy"
+                    >
+                    <label for="input-checkbox" class="check-text">
+                        <span>
+                            <svg class="check-icon" width="11" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span> Соглашаюсь с рассылкой и принимаю <a href="./index.html" class="contract">Условия договора</a></label>
                 </div>
                 <button type="submit" class="modal-send">Отправить</button>
             </form>
