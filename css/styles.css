@@ -659,6 +659,7 @@ img {
 
 .footer-flex {
     margin-right: 70px;
+    flex-grow: 1;
 }
 
 .footer-logo {
@@ -772,7 +773,6 @@ img {
 
 .footer-form-wrap {
     display: flex;
-    margin-top: 20px;
 }
 
 .submit-title {
@@ -783,6 +783,10 @@ img {
     text-transform: uppercase;
     color: var(--header-background-color);
 }
+.footer-form {
+    margin-top: 20px;
+}
+
 .footer-input {
     display: block;
     width: 358px;
@@ -803,7 +807,9 @@ img {
 }
 
 .footer-button-submit {
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: baseline;
     min-width: 200px;
     height: 50px;
     font-weight: 700;
@@ -818,17 +824,24 @@ img {
     margin-left: 12px;
     outline: none;
     padding-left: 29px;
-    text-align: start;
+}
 
+.footer-input::placeholder, 
+.footer-input:focus-visible {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
 .submit-btn-icon {
     fill: var(--header-background-color);
-    position: absolute;
-    right: 28px;
-    bottom: 13px;
+    margin-left: 10px;
 }
+
+
 
 /* -------Модальне вікно------ */
 
@@ -868,6 +881,7 @@ img {
 }
 .close-btn-icon:hover, .close-btn-icon:focus {
     fill: var(--accent-color);
+    outline: none;
 }
 
 .close-modal-btn {
@@ -892,7 +906,9 @@ img {
     pointer-events: none;
     visibility: hidden;
 }
-
+.modal-form {
+    margin-top: 12px;
+}
 .modal-field {
     margin-top: 12px;
     margin-bottom: 10px;
@@ -908,13 +924,14 @@ img {
     color: var(--primary-text-color);
 }
 
-
-.modal-lable {
+.madal-lable {
+    font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.17; 
     letter-spacing: 0.01em;
     color: var(--second-text-color);
 }
+
 .modal-input-wrap {
     position: relative;
     padding-top: 4px;
@@ -945,9 +962,9 @@ img {
     transition: fill var(--hoover-duration) var(--hover-time-function);
 }
 .modal-coment {
+    display: block;
     width: 100%;
     height: 120px;
-    margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -967,6 +984,7 @@ img {
 .check-text {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
